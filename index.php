@@ -50,6 +50,8 @@
 					 <!--  <h2 style="font-weight:500;">ROOK-IT</h2> -->
 				    </a>
 				</div>
+
+	  			<!-- /nav-wrap -->
 				<nav id="nav-wrap" class="nav-wrap1 twelve columns">
 							<ul id="nav">
 								<li class="current">
@@ -62,7 +64,7 @@
 									<a href="solution.php"><i class="icomoon-brain"></i> SOLUTION</a>
 								</li>
 								<li>
-									<a href="boutique.php"><i class="icomoon-cart"></i> BOUTIQUE</a>
+									<a href="https://rookitservices.com/omarket/"><i class="icomoon-cart"></i> BOUTIQUE</a>
 								</li>
 								<li>
 									<a href="#"><i class="icomoon-certificate"></i> ROOK-IT</a>
