@@ -1,0 +1,687 @@
+/* ==========================================================================
+  Body
+============================================================================= */
+
+/* ==========================================================================
+  Site Loader
+============================================================================= */
+.site-loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #fff;
+  background-image: url("../img/preload.gif");
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .site-loader {
+    background-image: url("../img/preload@2x.gif");
+    background-size: 32px 32px;
+  }
+}
+/* ==========================================================================
+  Responsive Image
+============================================================================= */
+img {
+  height: auto;
+  max-width: 100%;
+}
+#map_canvas img,
+.google-maps img {
+  max-width: none;
+}
+/* ==========================================================================
+  Font Face Definitions
+============================================================================= */
+.headings-font-face,
+.text-highlight,
+.splash-text .splash-headline,
+.site-footer .footer-widgets .widget-title,
+.section-title,
+.section-separator-title,
+.section-subtitle,
+.page-title,
+.team-popup .team-name,
+.counter .number,
+.pricing-table .price,
+.slider-media figure figcaption,
+.recent-post-body .post-title,
+.post-header .post-title,
+.post-comments .comment-reply-title,
+.post-comments .comment-list li .comment-text .name,
+.post-comments .comment-count {
+  font-family: "Novecento Sans Wide", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.body-font-face,
+body,
+.section-title small,
+.section-separator-title small,
+.section-subtitle small,
+.page-title small,
+.team-popup .team-name small,
+.testimonial blockquote p,
+.call-to-action .headline,
+.pricing-table .name,
+.pricing-table .price small,
+.tweet .tweet_text {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.serif-font-face,
+blockquote p,
+blockquote p:before,
+blockquote p:after {
+  font-family: "Droid Serif", Georgia, Times, "Times New Roman", serif;
+}
+/* ==========================================================================
+  Typography
+============================================================================= */
+h1,
+h2,
+h3 {
+  font-weight: 300;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 1em;
+}
+h1.half-margin-bottom,
+h2.half-margin-bottom,
+h3.half-margin-bottom,
+h4.half-margin-bottom,
+h5.half-margin-bottom,
+h6.half-margin-bottom {
+  margin-bottom: 0.5em;
+}
+h1.no-margin-bottom,
+h2.no-margin-bottom,
+h3.no-margin-bottom,
+h4.no-margin-bottom,
+h5.no-margin-bottom,
+h6.no-margin-bottom {
+  margin-bottom: 0;
+}
+strong {
+  color: #000;
+}
+.lead {
+  line-height: 1.6;
+  font-weight: 300;
+  margin-bottom: 60px;
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .lead {
+    font-size: 22px;
+  }
+}
+.fa,
+.gi {
+  display: inline-block;
+  vertical-align: middle;
+}
+a {
+  -webkit-transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+hgroup h1:not(:last-child),
+hgroup h2:not(:last-child),
+hgroup h3:not(:last-child),
+hgroup h4:not(:last-child),
+hgroup h5:not(:last-child),
+hgroup h6:not(:last-child) {
+  margin-bottom: 0;
+}
+blockquote {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+blockquote p {
+  font-style: italic;
+}
+blockquote p:before {
+  content: '\201C';
+}
+blockquote p:after {
+  content: '\201D';
+}
+.img-stretched,
+.team .team-photo img,
+.team-popup .team-photo img,
+.projects .project-image img,
+.recent-post-media .media img,
+.post-author .avatar img,
+.recent-post-media .slider-media img {
+  width: 100%;
+  height: auto;
+}
+.no-margin-top {
+  margin-top: 0 !important;
+}
+.no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+.no-padding-top {
+  padding-top: 0 !important;
+}
+.no-padding-bottom {
+  padding-bottom: 0 !important;
+}
+/* ==========================================================================
+  Text Styles
+============================================================================= */
+.text-highlight,
+.post-comments .comment-count {
+  font-weight: 700;
+    color:#0083c6;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-light {
+  font-weight: 300;
+}
+.text-normal {
+  font-weight: 400;
+}
+.text-semibold {
+  font-weight: 600;
+}
+.text-bold {
+  font-weight: 700;
+}
+.text-italic {
+  font-style: italic;
+}
+/* ==========================================================================
+  Text Colors
+============================================================================= */
+.big-text-primary {
+    color: #0083c6 !important;
+}
+.text-primary {
+  color: #a06d56 !important;
+}
+.text-success {
+  color: #5cb85c !important;
+}
+.text-info {
+  color: #5bc0de !important;
+}
+.text-warning {
+  color: #f0ad4e !important;
+}
+.text-danger {
+  color: #d9534f !important;
+}
+/* ==========================================================================
+  List Styles
+============================================================================= */
+.social-list ul {
+  font-size: 0;
+}
+.social-list li {
+  display: inline-block;
+}
+.social-list li + li {
+  margin-left: 10px;
+}
+.social-list a {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+}
+ul.plain-list,
+.social-list ul,
+.main-nav ul,
+.pricing-table .features ul,
+.client-list ul,
+.flickr-stream ul,
+.media .overlay ul,
+.projects .filter ul,
+.project-details-popup .project-controls ul,
+.recent-post-body .meta ul,
+.post-header .meta,
+.post-comments .comment-list,
+.slider-media .overlay ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.arrow-list,
+ul.check-list,
+.sidebar-block > ul {
+  list-style: none;
+}
+ul.arrow-list li:before,
+ul.check-list li:before,
+.sidebar-block > ul li:before {
+  display: inline-block;
+  width: 40px;
+  margin-left: -40px;
+  text-align: center;
+  line-height: inherit;
+  font-family: 'FontAwesome';
+}
+ul.arrow-list li:before,
+.sidebar-block > ul li:before {
+  content: '\F105';
+}
+ul.check-list li:before {
+  font-size: 13px;
+  content: '\F00C';
+}
+/* ==========================================================================
+  Spacers
+============================================================================= */
+[class*="spacer-"]:before,
+[class*="spacer-"]:after {
+  content: " ";
+  display: table;
+}
+[class*="spacer-"]:after {
+  clear: both;
+}
+[class*="spacer-"].bordered {
+  height: 1px;
+  background: #e8e8e8;
+}
+.spacer-10 {
+  margin: 5px 0;
+}
+.spacer-20 {
+  margin: 10px 0;
+}
+.spacer-30 {
+  margin: 15px 0;
+}
+.spacer-40 {
+  margin: 20px 0;
+}
+.spacer-50 {
+  margin: 25px 0;
+}
+.spacer-60 {
+  margin: 30px 0;
+}
+.spacer-70 {
+  margin: 35px 0;
+}
+.spacer-80 {
+  margin: 40px 0;
+}
+.spacer-90 {
+  margin: 45px 0;
+}
+.spacer-100 {
+  margin: 50px 0;
+}
+.spacer-110 {
+  margin: 55px 0;
+}
+.spacer-120 {
+  margin: 60px 0;
+}
+.spacer-130 {
+  margin: 65px 0;
+}
+.spacer-140 {
+  margin: 70px 0;
+}
+/* ==========================================================================
+  Miscs.
+============================================================================= */
+.touch {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+/* ==========================================================================
+  Site Splash Section
+============================================================================= */
+.site-splash {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-color: #111;
+}
+.site-splash .splash-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.site-splash .overlay {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUAQMAAAC3R49OAAAABlBMVEUAAAAAAAClZ7nPAAAAAnRSTlMAmf9A5tgAAAARSURBVAjXY1i1agEDEFCLBgA1MROJWXE8mAAAAABJRU5ErkJggg==');
+}
+.site-splash .fullscreen {
+  height: 100%;
+}
+.header-bottom-fixed .site-splash.fullscreen {
+  padding-bottom: 70px;
+}
+.header-top-fixed .site-splash.fullscreen {
+  padding-top: 70px;
+}
+/* ==========================================================================
+  Splash Slider
+============================================================================= */
+.splash-slider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+.splash-slider .cycle-prev,
+.splash-slider .cycle-next {
+  width: 40px;
+  height: 80px;
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  z-index: 111;
+  top: 50%;
+  margin-top: -40px;
+  text-align: center;
+  opacity: 0;
+  background-color: #fff;
+  -webkit-transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.splash-slider .cycle-prev:hover,
+.splash-slider .cycle-next:hover {
+  background-color: #0083c6;
+}
+.splash-slider .cycle-prev:hover:before,
+.splash-slider .cycle-next:hover:before {
+  color: #fff;
+}
+.splash-slider .cycle-prev:before,
+.splash-slider .cycle-next:before {
+  font-family: 'FontAwesome';
+  width: 100%;
+  height: 100%;
+  line-height: 80px;
+  font-size: 28px;
+  color: #555;
+  -webkit-transition: color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.splash-slider:hover .cycle-next,
+.splash-slider:hover .cycle-prev {
+  opacity: 1;
+}
+.splash-slider .cycle-prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+.splash-slider .cycle-prev:before {
+  content: '\f104';
+}
+.splash-slider .cycle-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.splash-slider .cycle-next:before {
+  content: '\f105';
+}
+.desktop.csstransitions .splash-slider .splash-media,
+.desktop.csstransitions .splash-slider .splash-text {
+  opacity: 0;
+  -webkit-transition: -webkit-transform 2.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: -webkit-transform 2.5s cubic-bezier(0.19, 1, 0.22, 1), transform 2.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.desktop.csstransitions .splash-slider .splash-text {
+  -webkit-transform: scale(2, 2);
+  -ms-transform: scale(2, 2);
+  transform: scale(2, 2);
+}
+.desktop.csstransitions .splash-slider .cycle-slide-active .splash-text {
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+.desktop.csstransitions .splash-slider .cycle-slide-active .splash-media,
+.desktop.csstransitions .splash-slider .cycle-slide-active .splash-text {
+  opacity: 1;
+  -webkit-transition-duration: 1.5s, 1.5s;
+  transition-duration: 1.5s, 1.5s;
+}
+/* ==========================================================================
+  Splash Content
+============================================================================= */
+.splash-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 4;
+  text-align: center;
+  font-size: 0;
+}
+.splash-content:before {
+  content: '';
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.splash-content .container {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+}
+.splash-content .container {
+  z-index: 2;
+  position: relative;
+  max-width: 100%;
+}
+.splash-content .splash-media {
+  z-index: 1;
+}
+/* ==========================================================================
+  Splash Text
+============================================================================= */
+.splash-text {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.splash-text .splash-intro {
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.8;
+  margin: 0 0 .5em;
+}
+.splash-text .splash-intro a,
+.splash-text .splash-intro span {
+  display: inline-block;
+  background: #0083c6;
+  padding: 20px;
+  padding: 5px 10px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: background-color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: background-color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.splash-text .splash-intro a:hover,
+.splash-text .splash-intro span:hover {
+  background-color: #000;
+}
+.splash-text .splash-description p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+}
+.splash-text .splash-headline {
+  font-size: 40px;
+  color: #fff;
+  margin: 0;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* ==========================================================================
+  Splash Media (.splash-media-video, .splash-media-img)
+============================================================================= */
+.splash-media,
+.section-media {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.splash-media.has-bg {
+  background-repeat: no-repeat;
+}
+/* ==========================================================================
+  Splash Feedback
+============================================================================= */
+.splash-feedback {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  left: 0;
+  bottom: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  -webkit-animation: flash 6s infinite;
+  animation: flash 6s infinite;
+}
+.splash-feedback .mouse {
+  border: 2px solid #fff;
+  width: 18px;
+  height: 28px;
+  border-radius: 9px;
+  display: block;
+  text-align: center;
+  margin: 0 auto 6px;
+  margin-top: -100px;
+  color: #fff;
+}
+.splash-feedback .mouse .fa,
+.splash-feedback .mouse .gi {
+  line-height: 28px;
+}
+
+
+
+
+/* ==========================================================================
+  Media Queries
+============================================================================= */
+
+@media (min-width: 768px) {
+  /* ==========================================================================
+    Typography
+  ============================================================================= */
+  h1,
+  .h1 {
+    font-size: 60px;
+  }
+  h2,
+  .h2 {
+    font-size: 45px;
+  }
+  h3,
+  .h3 {
+    font-size: 32px;
+  }
+  /* ==========================================================================
+    Site Splash
+  ============================================================================= */
+  .splash-text .splash-description p {
+    font-size: 18px;
+  }
+    .splash-text .splash-description p span{
+        padding: 5px;
+        background-color: rgba(0,0,0,0.2);
+    }
+  .splash-text .splash-headline {
+    font-size: 48px;
+  }
+  .splash-feedback {
+    display: block;
+  }
+ 
+}
+@media (min-width: 992px) {
+  /* ==========================================================================
+    Typography
+  ============================================================================= */
+  h1,
+  .h1 {
+    font-size: 72px;
+  }
+  h2,
+  .h2 {
+    font-size: 54px;
+  }
+  h3,
+  .h3 {
+    font-size: 36px;
+  }
+  /* ==========================================================================
+    Site Splash
+  ============================================================================= */
+  .splash-text .splash-description p {
+    font-size: 22px;
+  }
+  .splash-text .splash-headline {
+    font-size: 72px;
+  }
+  
+}
+
+@media (min-width: 1200px) {
+  /* ==========================================================================
+    Typography
+  ============================================================================= */
+  h1,
+  .h1 {
+    font-size: 72px;
+  }
+  h2,
+  .h2 {
+    font-size: 54px;
+  }
+  h3,
+  .h3 {
+    font-size: 36px;
+  }
+  /* ==========================================================================
+    Site Splash
+  ============================================================================= */
+  .splash-text .splash-description p {
+    font-size: 26px;
+  }
+  .splash-text .splash-headline {
+    font-size: 96px;
+  }
+  }
